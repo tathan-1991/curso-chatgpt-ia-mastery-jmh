@@ -1,0 +1,84 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    color: #007BFF; /* Azul */
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+section.content {
+    margin: 20px;
+}
+
+.class p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .class p {
+        font-size: 1em;
+    }
+
+    .button {
+        padding: 8px 15px;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
