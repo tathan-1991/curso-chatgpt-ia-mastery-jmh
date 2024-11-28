@@ -1,95 +1,52 @@
-/* Reset para márgenes y paddings por defecto */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
-
-/* Estilos para todo el contenido */
+/* Estilos generales */
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-}
-
-/* Encabezado principal */
-header {
-    background-color: #3c763d; /* Verde */
-    color: white;
+    margin: 0;
     padding: 20px;
-    text-align: center;
 }
-
 h1 {
-    font-size: 2.5em;
+    color: #28a745; /* Color verde para el h1 */
+    margin-bottom: 20px; /* Espacio abajo del h1 */
 }
-
-/* Secciones principales */
-section {
-    padding: 20px;
-    min-height: 100vh; /* Asegura que cada sección ocupe toda la pantalla */
-    background-color: #fff;
-    margin-bottom: 20px;
-}
-
-/* Títulos de las secciones */
 h2 {
-    color: #007bff; /* Azul */
-    font-size: 2em;
-    margin-bottom: 20px;
+    color: #007bff; /* Color azul para los h2 */
+    margin-bottom: 15px; /* Espacio abajo del h2 */
 }
-
 h3 {
-    font-size: 1.5em;
-    margin-top: 15px;
+    color: #333; /* Color gris para los h3 */
+    margin-bottom: 15px; /* Espacio abajo de h3 */
 }
-
-/* Botones de enlaces */
-.btn {
+/* Estilos para los botones */
+.button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #28a745; /* Verde */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    background-color: #218838; /* Verde oscuro */
-}
-
-/* Estilos para el pie de página */
-footer {
-    background-color: #333;
-    color: white;
+    background-color: #28a745; /* Color verde para los botones */
+    color: white; /* Color blanco para el texto del botón */
+    padding: 12px 20px; /* Tamaño mediano */
+    font-size: 16px;
     text-align: center;
-    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 10px 0; /* Margen para separación */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
 }
-
-/* Responsividad para móviles */
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    h3 {
-        font-size: 1.2em;
-    }
-
-    .btn {
-        padding: 8px 15px;
-        font-size: 1em;
-    }
+.button:hover {
+    background-color: #218838; /* Cambio de color cuando el botón es hover */
+    color: white; /* Asegura que el texto sea blanco también cuando está en hover */
+}
+/* Estilos para los videos */
+iframe {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+/* Estilos de la página y secciones */
+.course-section {
+    margin-bottom: 30px;
+}
+/* Estilos para la separación de clases */
+h3, h2 {
+    margin-top: 30px;
 }
