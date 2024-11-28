@@ -1,84 +1,95 @@
-/* Estilos generales */
+/* Reset para márgenes y paddings por defecto */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    height: 100%;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
 }
 
+/* Estilos para todo el contenido */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado principal */
 header {
-    background-color: #4CAF50; /* Verde */
+    background-color: #3c763d; /* Verde */
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
+/* Secciones principales */
+section {
+    padding: 20px;
+    min-height: 100vh; /* Asegura que cada sección ocupe toda la pantalla */
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Títulos de las secciones */
 h2 {
-    color: #007BFF; /* Azul */
+    color: #007bff; /* Azul */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h3 {
     font-size: 1.5em;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
-section.content {
-    margin: 20px;
-}
-
-.class p {
-    font-size: 1.1em;
-    margin: 10px 0;
-}
-
-.button {
+/* Botones de enlaces */
+.btn {
     display: inline-block;
-    background-color: #007BFF;
-    color: white;
     padding: 10px 20px;
-    margin: 10px 0;
+    background-color: #28a745; /* Verde */
+    color: white;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #218838; /* Verde oscuro */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 10px;
 }
 
-.button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.5em;
+/* Responsividad para móviles */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
     }
 
     h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
         font-size: 1.2em;
     }
 
-    .class p {
+    .btn {
+        padding: 8px 15px;
         font-size: 1em;
     }
-
-    .button {
-        padding: 8px 15px;
-    }
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
